@@ -127,10 +127,9 @@ footer {
   justify-content: center;
   gap: 30px;
   margin-top: 40px;
-  margin-bottom: 100px; 
+  margin-bottom: 80px;
   flex-wrap: wrap;
 }
-
 
 .botao {
   background-color: #00A86B;
@@ -149,4 +148,16 @@ footer {
 .botao:hover {
   background-color: #007A50;
   transform: scale(1.05);
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
