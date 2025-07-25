@@ -309,6 +309,18 @@ h1 {
   }
 }
 
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Fica em coluna no celular */
+    align-items: center;
+  }
+
+  .menu a {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
 footer {
   background: #37b24d;
   color: white;
