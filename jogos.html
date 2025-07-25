@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogos - Heróis da Natureza</title>
+  <link rel="stylesheet" href="geral.css1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Heróis da Natureza</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="chamasverdes.html">Sobre</a>
+      <a href="jogos.html">Jogos</a>
+    </nav>
+  </header>
+
+  <main class="jogos">
+    <h2>Quiz: Seja um Herói da Natureza!</h2>
+    <div class="quiz">
+      <p class="pergunta">Qual desses é um exemplo de reciclagem?</p>
+      <button onclick="responder(true)">Transformar garrafa PET em camiseta</button>
+      <button onclick="responder(false)">Jogar lixo no rio</button>
+      <button onclick="responder(false)">Queimar plástico no quintal</button>
+      <p id="resultado"></p>
+    </div>
+  </main>
+
+  <footer>
+    Feito com 💚 por Green Flames
+  </footer>
+
+  <script>
+    function responder(correta) {
+      const resultado = document.getElementById("resultado");
+      resultado.textContent = correta ? "🎉 Resposta correta! Você é um herói da natureza!" : "❌ Opa! Essa não é a melhor escolha... tente novamente!";
+      resultado.style.fontWeight = "bold";
+      resultado.style.marginTop = "1rem";
+    }
+  </script>
+</body>
+</html>
