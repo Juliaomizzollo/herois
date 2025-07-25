@@ -321,6 +321,20 @@ h1 {
   }
 }
 
+.menu {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar linha */
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 6px 12px;
+}
+
 footer {
   background: #37b24d;
   color: white;
