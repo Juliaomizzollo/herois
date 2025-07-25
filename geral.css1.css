@@ -273,6 +273,42 @@ h1 {
   background-color: #388e3c;
 }
 
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .card, .container, .quiz-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, h2 {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+}
+
 footer {
   background: #37b24d;
   color: white;
