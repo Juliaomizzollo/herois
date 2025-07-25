@@ -204,13 +204,15 @@
       resultado.style.display = "block";
 
       let mensagem = "";
-      if (pontuacao <= 5) {
-        mensagem = "😢 Você ainda é um ajudante em treinamento. Que tal tentar de novo e aprender mais para virar um Herói da Natureza?";
-      } else if (pontuacao <= 11) {
-        mensagem = "💪 Muito bem, jovem defensor! Você está no caminho para se tornar um verdadeiro Herói da Natureza!";
-      } else {
-        mensagem = "🌟 UAU! Você é um verdadeiro Herói da Natureza! A floresta agradece sua coragem e sabedoria!";
-      }
+      if (score < 5) {
+  resultMessage = "Puxa, parece que você ainda não dominou todos os poderes da natureza. Que tal treinar mais para se tornar um grande herói?";
+} else if (score < 11) {
+  resultMessage = "Muito bem, jovem protetor da natureza! Você está no caminho! Que tal treinar mais para se tornar um grande herói?";
+} else if (score < 15) {
+  resultMessage = "Excelente, você já pode se considerar um grande herói! Treine mais um pouco e você se tornará imbatível!";
+} else {
+  resultMessage = "Lendário e imbatível! Você é um verdadeiro Herói da Natureza! O meio ambiente agradece sua coragem e sabedoria!";
+}
 
       resultado.innerHTML = `
         <h2>Seu resultado:</h2>
