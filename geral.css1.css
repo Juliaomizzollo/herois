@@ -122,9 +122,3 @@ footer {
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.top-video {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  display: block;
-}
