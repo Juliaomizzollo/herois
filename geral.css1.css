@@ -336,6 +336,42 @@ h1 {
   padding: 6px 12px;
 }
 
+/* Ícone do menu hambúrguer */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  padding: 0.5rem;
+}
+
+/* Versão mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    text-align: right;
+    margin-top: 0.5rem;
+  }
+
+  nav#menu {
+    display: none;
+    flex-direction: column;
+    background-color: #37b24d;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  nav#menu a {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  nav#menu.active {
+    display: flex;
+  }
+}
+
 footer {
   background: #37b24d;
   color: white;
