@@ -53,24 +53,13 @@ main {
   color: #f76707;
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center
 }
 
 .intro p {
   font-size: 1.2rem;
   color: #333;
-}
-
-.sobre .titulo-fogo {
-  font-size: 2rem;
-  color: #f03e3e;
-  animation: flame 1s infinite alternate;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-@keyframes flame {
-  from { text-shadow: 0 0 10px orange; }
-  to { text-shadow: 0 0 20px red; }
+  text-align: center
 }
 
 .imagem-equipe {
