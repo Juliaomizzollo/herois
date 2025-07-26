@@ -49,10 +49,11 @@ main {
 }
 
 .banner {
-  width: 30%;
-  border-radius: 50px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
+ .banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 20px; /* opcional, se quiser cantos arredondados */
 }
 
 .intro h2 {
