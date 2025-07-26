@@ -49,11 +49,11 @@ main {
 }
 
 .banner {
- .banner {
   width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 20px; /* opcional, se quiser cantos arredondados */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .intro h2 {
